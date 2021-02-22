@@ -13,7 +13,7 @@
               {{-- ユーザー登録ページへのリンク　--}}
                 <li>{!! link_to_route('signup.get', 'Signup', [], ['class' => 'nav-link']) !!}</li>
               {{--　log inページへのリンク--}}
-              <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+              <li class="nav-item">{!! link_to_route('login', 'Login', [], ['class' => 'nav-link']) !!}</li>
             </ul>
         </div>
     </nav>
