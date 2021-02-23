@@ -3,6 +3,7 @@
 @section('content')
     @if (Auth::check())
      <h3>タスクを作製しましょう</h3>
+     @include('tasks.index')
     @else
     <div class="center jumbotron">
         <div class="text-center">

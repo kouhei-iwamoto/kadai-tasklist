@@ -60,12 +60,12 @@ class TasksController extends Controller
         ]);
         
         
-        $task = new Task;
-        $task->status = $request->status;
-        $task->content = $request->content;
-        $task->save();
+        $request->user()->tasks()->create([
+            'status' => $request->status,
+            'content' => $request->content,
+        ]);
         
-        return redirect('/');
+        return back();
     }
 
     /**
